@@ -22,9 +22,12 @@ Development install will also install `boto3-stubs[dynamodb]`.
 ```python
 def processor(*, context, message, source, **kwargs):
 
-    from typing import cast
+    from typing import TYPE_CHECKING, cast
 
-    from echostream_function_context import Context
+    if TYPE_CHECKING:
+        from echostream_function_context import Context
+    else:
+        Context = object
 
     context = cast(Context, context)
 ```
