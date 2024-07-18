@@ -1,6 +1,8 @@
 # echostream-function-context
 
 Micro library for typing function contexts in EchoStream functions
+
+> Note: Version >= 0.1.0 requires Python 3.12
  
 ## Installation
 
